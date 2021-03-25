@@ -1,0 +1,14 @@
+body {
+  background: black;
+}
+
+header {
+  background: green;
+  height: 200px;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,14 +1,20 @@
 body {
   background: black;
 }
-
 header {
   background: green;
   height: 200px;
 }
-
 nav {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+.background {
+  background-color: #FE5B57;
+  height: 5000px;
+}
+#nomeTurma{
+  color:white;
+  font-size: 25px;
 }

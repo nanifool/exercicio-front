@@ -1,20 +1,85 @@
-body {
-  background: black;
+/* o "*" aplica para todos os elementos, ou seja, todos os textos nesse css vão ser sans-serif */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+body {
+  background: rgb(21,112,255);
+  background: linear-gradient(90deg, rgba(21,112,255,1) 12%, rgba(132,0,255,1) 100%);
+  padding: 20px;
+}
+/* .conteudo {
+  ;
+} */
 header {
-  background: green;
-  height: 200px;
+  background: white;
+  display: flex; /* deixou o conteudo filho (nav e logo) um ao lado do outro */
 }
 nav {
-  padding: 20px;
+  padding: 0 20px;
+  width: 60%;
+  display: flex; /* diferente do display block, esse serve pra usar o flexbox a baixo */
+  justify-content: space-around; /*  coloca espaço entre o os filhos de nav */
+  align-items: center; /* alinha verticalmente no centro */
+}
+a {
+  text-decoration: none; /*elimina o padrão sublinhado de links */
+  color: orange;
+  font-size: 25px;
+}
+/* o hover serve para adicionar um estilo diferente quando tu passa o mouse por cima da tag descrita, no caso o "a" */
+a:hover {
+  color: black;
+  font-size: 28px;
+}
+.logo{
+  width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.logo img {
+  width: 200px;
 }
 .background {
   background-color: #FE5B57;
-  height: 5000px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px
 }
-#nomeTurma{
-  color:white;
-  font-size: 25px;
+.turma19 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.turma19 img {
+  border: 10px solid white;
+  border-radius: 30px;
+  width: 80%;
+}
+.turma19 p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 150px;
+  margin: 20px;
+}
+.aceleradora-info {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 20px;
+}
+.aceleradora-info img {
+  padding: 10px;
+}
+.aceleradora-info h2 {
+  color: orange;
+  text-align: center;
+}
+.aceleradora-info p {
+  text-align: center;
+  padding: 0 20px;
 }
